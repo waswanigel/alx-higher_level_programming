@@ -1,20 +1,7 @@
 #!/usr/bin/python3
-"""
-more class base
-"""
+Square = __import__('10-square').Square
 
+s = Square(13)
 
-Rectangle = __import__('9-rectangle').Rectangle
-
-
-"""
-Square class
-"""
-
-
-class Square(Rectangle):
-    """ Square Class """
-    def __init__(self, size):
-        """ instantiation with size """
-        self.__size = size
-        super().__init__(self.__size, self.__size)
+print(s)
+print(s.area())
